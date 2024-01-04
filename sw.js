@@ -5,6 +5,9 @@ self.addEventListener("install", e => {
         caches.open("static").then(cache => {
             return cache.addAll([
                 "./",
+                "./redirect.html",
+                "./index.html",
+                "./script.js",
                 "./login.css",
                 "./img/pwa-icon16x16.png",
                 "./img/pwa-icon24x24.png",
